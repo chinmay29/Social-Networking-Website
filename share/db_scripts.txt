@@ -1,0 +1,89 @@
+# Script to create necessary tables for Connect web application
+
+USE connect;
+
+DROP TABLE IF EXISTS comment_table;
+
+DROP TABLE IF EXISTS message_table;
+
+DROP TABLE IF EXISTS Event_User;
+
+DROP TABLE IF EXISTS E_Event;
+
+DROP TABLE IF EXISTS chat_history;
+
+DROP TABLE IF EXISTS chat_messages;
+
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE IF NOT EXISTS users
+(
+user_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_email VARCHAR(50) NOT NULL UNIQUE,
+password VARCHAR(64) NOT NULL,
+first_name VARCHAR(40) NOT NULL,
+last_name VARCHAR(40)
+);
+
+CREATE TABLE IF NOT EXISTS chat_messages
+(
+msg_id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+msg_text VARCHAR(500) NOT NULL,
+msg_time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+from_user_id INT NOT NULL,
+FOREIGN KEY (from_user_id) REFERENCES users(user_id)
+);
+
+CREATE TABLE IF NOT EXISTS chat_history
+(
+chat_id BIGINT NOT NULL,
+msg_id BIGINT NOT NULL,
+from_user_id INT NOT NULL,
+to_user_id INT NOT NULL,
+PRIMARY KEY(chat_id, msg_id, from_user_id, to_user_id),
+FOREIGN KEY (msg_id) REFERENCES chat_messages(msg_id),
+FOREIGN KEY (from_user_id) REFERENCES users(user_id),
+FOREIGN KEY (to_user_id) REFERENCES users(user_id)
+);
+
+CREATE TABLE IF NOT EXISTS E_Event
+(
+E_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+E_name VARCHAR(100),
+E_location VARCHAR(1000),
+E_description VARCHAR(1000),
+E_date DATETIME,
+E_joined INT,
+E_creator INT
+);
+
+CREATE TABLE IF NOT EXISTS Event_User
+(
+E_ID INT,
+U_ID INT
+);
+
+CREATE TABLE IF NOT EXISTS message_table
+(
+message_id INT NOT NULL PRIMARY KEY,
+message_text VARCHAR(500) NOT NULL,
+message_time DATETIME,
+message_likes INT,
+message_flag INT,
+user_id INT
+);
+
+CREATE TABLE IF NOT EXISTS comment_table
+(
+comment_id INT NOT NULL,
+msg_id INT NOT NULL,
+comment_text VARCHAR(300),
+comment_time DATETIME,
+comment_likes INT,
+comment_flag INT,
+user_id INT,
+PRIMARY KEY(comment_id, msg_id),
+FOREIGN KEY (msg_id) REFERENCES message_table(message_id)
+);
+
+ 

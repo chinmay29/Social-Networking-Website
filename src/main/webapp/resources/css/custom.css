@@ -1,0 +1,418 @@
+html {
+	height: 100%;
+}
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	height: 100%;
+}
+
+#background {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: -10;
+	background-color: black;
+}
+
+#bg-img {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	-webkit-opacity: 0.60;
+	-moz-opacity: 0.60;
+	opacity: 0.60;
+}
+
+#footer {
+	background-color: rgba(00, 00, 00, 0.65);
+	color: #ffffff;
+	font-size: 11px;
+	width: 98.5%;
+	/*	position: fixed;
+	bottom: 0px;      */
+	padding: 10px 10px 10px 10px;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.centered {
+	align: center;
+}
+
+.sidebar-nav {
+	padding: 9px 0;
+	max-width: 180px;
+}
+
+.main-content {
+	clear: right;
+}
+
+h3 {
+	display: inline;
+}
+
+.datepicker {
+	z-index: 1052;
+}
+
+#home-page-content, #index-page-content, #loginpage-content {
+	height: 36em;
+	position: relative;
+}
+
+#home-page-content, #index-page-content {
+	color: white;
+}
+
+#home-page-content #text, #index-page-content #text, #loginpage-content #text
+	{
+	text-align: center;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+#home-page-content #text, #loginpage-content #text {
+	width: 100%;
+	height: 100%;
+}
+
+.home-buttons {
+	min-width: 120px;
+	margin-top: 20px;
+}
+
+.content {
+	height: 100%;
+}
+
+.login-form {
+	max-width: 300px;
+}
+
+.centered {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 300px;
+	padding-top: 20px;
+}
+
+.centered input {
+	margin: 6px;
+}
+
+.errorMessage {
+	display: none;
+	width: 500px;
+	height: 20px;
+	height: auto;
+	position: absolute;
+	left: 0%;
+	margin-left: -100px;
+	top: -150px;
+	background-color: white;
+	/*    background-color: #383838; 
+    color: #F0F0F0;  */
+	color: #990000;
+	font-family: Calibri;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	/* */
+	border: 1px solid;
+	border-color: #ff8888;
+	/* */
+	border-radius: 2px;
+	/*    -webkit-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    -moz-box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);
+    box-shadow: 0px 0px 24px -1px rgba(56, 56, 56, 1);  */
+	-webkit-box-shadow: 0px 0px 24px -1px #ff9999;
+	-moz-box-shadow: 0px 0px 24px -1px #ff9999;
+	box-shadow: 0px 0px 24px -1px #ff9999;
+}
+
+.login-register-btns {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.navbar .name {
+	float: right;
+	display: block;
+	padding: 10px 20px 10px;
+	margin-left: -20px;
+	font-size: 20px;
+	font-weight: 200;
+	color: #777777;
+	text-shadow: 0 1px 0 #ffffff;
+}
+
+.navbar .name:hover, .navbar .name:focus {
+	text-decoration: none;
+}
+
+.navbar-inverse .name {
+	color: #999999;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar-inverse .name:hover, .navbar-inverse .name:focus {
+	color: #ffffff;
+}
+
+.chat-page {
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	background-color: #f5f5f5;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	width: 95%;
+	height: 90%;
+	padding: 20px;
+}
+
+.equal-width {
+	width: 50%;
+}
+
+.ul-list {
+	margin-bottom: 0px;
+}
+
+.ul-list li {
+	text-align: center;
+}
+
+.add-tab-border {
+	border: 1px solid #e3e3e3;
+	border-top: transparent;
+	background-color: white;
+}
+
+.tabpanel-border {
+	height: 93%;
+}
+
+.chat-page .nav-tabs>.active>a, .chat-page .nav-tabs>.active>a:hover,
+	.chat-page .nav-tabs>.active>a:focus {
+	border-bottom: 1px solid #e3e3e3;
+	background: #888888;
+	color: white;
+}
+
+.adjust-margin {
+	margin-left: 0px;
+	margin-top: 30px;
+}
+
+.adjust-margin {
+	width: 96%;
+}
+
+.adjust-container-padding {
+	padding-right: 0px;
+}
+
+.bg-white {
+	border: 1px solid #e3e3e3;
+	background: white;
+	height: 75px;
+}
+
+.in-content {
+	height: 70%;
+}
+
+.bg-color {
+	background: #e6f1f6;
+}
+
+.div1 {
+	height: 70px;
+}
+
+.div2 {
+	height: 70px;
+}
+
+.add-left-border {
+	border-left: 1px solid #e3e3e3;
+}
+
+.add-bottom-border {
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.dark-grey-bg {
+	background-color: #c9c9c9;
+}
+
+.light-grey-bg {
+	background-color: #e3e3e3;
+}
+
+input[type="search"] {
+	margin-bottom: 0px;
+}
+
+.message-form, .refresh-friends, .refresh-history {
+	padding: 20px;
+}
+
+.search-box {
+	width: 78%;
+}
+
+.message-box {
+	width: 90%
+}
+
+#recepientsListChat, #recepientsListHistory {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px;
+}
+
+#recepientsChatListHistory {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+#chatHistoryLabel {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 5px;
+}
+
+.nobullets {
+	list-style-type: none;
+}
+
+.matchedFriendsList, .frequentContactsList {
+	border: 1px solid #e3e3e3;
+	padding: 0px;
+	float: top;
+	margin-left: 20px;
+	margin-right: 20px;
+	z-index: 99;
+	background-color: #f5f5f5;
+	margin-top: -20px;
+}
+
+.add-left-margin {
+	margin-left: 5px;
+}
+
+.add-some-margin {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.add-table-margin {
+	margin-left: 12px;
+}
+
+.matched-table {
+	margin-bottom: 0px;
+}
+
+.refresh-history-btn, .refresh-friends-btn {
+	margin-top: 20px;
+}
+
+.refresh-friends-btn {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.fill-anchor {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.fill-anchor:hover {
+	text-decoration: none;
+	background: #e3e3e3;
+}
+
+.matched-table td {
+	padding: 0px;
+}
+
+.receivedMsgs {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.receivedMsgs i {
+	font-size: 11px;
+}
+
+.userMsgs, .otherMsgs {
+	border: 1px solid #e3e3e3;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+.userMsgs {
+	background-color: #d6e1f3;
+	float: left;
+	margin-left: 25px;
+}
+
+.otherMsgs {
+	background-color: #d1fad5;
+	float: right;
+	text-align: right;
+	margin-left: 25px;
+}
+
+#frequentContactsLabel {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px;
+}
+
+.add-row-margins {
+	margin-top: 40px;
+	margin-left: 0px;
+}
+
+.hover-item-style, .hover-item-style * {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+.hover-item-style i {
+	padding: 8px;
+}
+
+.hover-item-style:hover {
+	background: #e3e3e3;
+}
+
+.chat-list-table td {
+	padding: 0px;
+}
+
+.edit-profile {
+	width: 40%;
+}

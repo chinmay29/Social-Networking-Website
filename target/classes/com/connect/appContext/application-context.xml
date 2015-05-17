@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+ http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ <import resource="classpath:com/connect/beans/dbBeans.xml"/>
+ 
+ <import resource="classpath:com/connect/beans/chatBeans.xml"/>
+ <import resource="classpath:com/connect/beans/eventsBeans.xml"/>
+ <import resource="classpath:com/connect/beans/friendsBeans.xml"/>
+ <import resource="classpath:com/connect/beans/newsFeedBeans.xml"/>
+ <import resource="classpath:com/connect/beans/userMgmtBeans.xml"/>
+
+ <import resource="classpath:com/connect/beans/chatServiceBeans.xml"/>
+ <import resource="classpath:com/connect/beans/eventsServiceBeans.xml"/>
+ <import resource="classpath:com/connect/beans/friendsServiceBeans.xml"/>
+ <import resource="classpath:com/connect/beans/newsFeedServiceBeans.xml"/>
+ <import resource="classpath:com/connect/beans/userMgmtServiceBeans.xml"/>
+ 
+ <import resource="classpath:com/connect/a/app/Sample/sampleBeans.xml"/>
+ <import resource="classpath:com/connect/a/app/Sample/sampleServiceBeans.xml"/>
+  
+</beans>
